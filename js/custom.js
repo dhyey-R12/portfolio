@@ -88,6 +88,10 @@ $(document).ready(function() {
 		});
 	}, { offset: '100%' });
 
+	$('.progress_count').counterUp({
+		delay: 2
+	});
+
 	// bottom to top
 	var btn = $('.topbtn');
 
@@ -103,4 +107,12 @@ $(document).ready(function() {
 		e.preventDefault();
 		$('html, body').animate({scrollTop:0}, '300');
 	});
+});
+
+// Typed.JS
+var typed = new Typed('.banner_text_inner h5', {
+	strings: ["Web Designer.", "Front-End Developer.", "Ui/Ux Design."],
+	typeSpeed: 30,
+	loop: true,
+	loopCount: Infinity,
 });

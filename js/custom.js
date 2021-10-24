@@ -1,8 +1,11 @@
 // Loader JS
 $(window).on('load',function() {
-	$('#loader-wrapper').fadeOut('slow', function(){
+	// $('#loader-wrapper').fadeOut('slow', function(){
 		$('body').removeClass('style_overflow_hidden');
-	});
+	// });
+	let loaderheight = $("#loader-wrapper").innerHeight();
+
+	$('#loader-wrapper').css({"top": -loaderheight,"bottom": loaderheight});
 });
 
 $(document).ready(function() {
@@ -89,7 +92,7 @@ $(document).ready(function() {
 	}, { offset: '100%' });
 
 	$('.progress_count').counterUp({
-		delay: 2
+		delay: 5
 	});
 
 	// bottom to top
@@ -111,7 +114,7 @@ $(document).ready(function() {
 
 // Typed.JS
 var typed = new Typed('.banner_text_inner h5', {
-	strings: ["Web Designer.", "Front-End Developer.", "Ui/Ux Design."],
+	strings: ["Product Manager.", "Project Manager."],
 	typeSpeed: 30,
 	loop: true,
 	loopCount: Infinity,

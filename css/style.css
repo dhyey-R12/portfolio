@@ -120,11 +120,14 @@ nav li .nav-link {
 	font-size: 18px;
 	color: #647084 !important;
 	padding: 8px 0px !important;
-	margin: 0px 35px !important;
+	margin: 0px 30px 0px 0px !important;
 	position: relative;
 	font-weight: 600;
 	transition: all 0.3s;
 	overflow: hidden;
+}
+nav li:last-child .nav-link {
+	margin-right: 0 !important;
 }
 nav li .nav-link:hover ,
 nav li .active {
@@ -1070,7 +1073,7 @@ button.yellow_btn:hover svg{
 }
 @media only screen and (max-width: 1199px){
 	nav li .nav-link {
-		margin: 0px 20px !important;
+		margin: 0px 20px 0px 0px !important;
 	}
 	.banner_text h5 ,
 	.banner_text h6 {

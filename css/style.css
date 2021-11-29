@@ -132,27 +132,27 @@ nav li:last-child .nav-link {
 }
 nav li .nav-link:hover ,
 nav li .active {
-    color: #051E3B !important;
-    transition: all 0.3s;
+	color: #051E3B !important;
+	transition: all 0.3s;
 }
 nav li .nav-link:after,
 nav li .active:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 4px;
-    width: 0;
-    border-bottom: 2px solid #FDB813;
-    transition: width 0.3s;
-    z-index: 1;
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 4px;
+	width: 0;
+	border-bottom: 2px solid #FDB813;
+	transition: width 0.3s;
+	z-index: 1;
 }
 nav li .active:after{
-    width: 100%;
-    left: 0;
+	width: 100%;
+	left: 0;
 }
 nav li .nav-link:hover:after{
-    width: 100%;
-    left: 0;
+	width: 100%;
+	left: 0;
 } 
 .navbar-toggler {
 	padding: 0;
@@ -589,7 +589,7 @@ span.typed-cursor.typed-cursor--blink {
 	margin-top: 47px;
 }
 .skills_box {
-	max-width: 593px;
+	max-width: 730px;
 	margin: auto;
 }
 .skills_box_inner {
@@ -611,24 +611,39 @@ span.typed-cursor.typed-cursor--blink {
 	text-align: center;
 	line-height: 81px;
 }
-.skills_box .skills_box_image_inner:nth-child(1){
+.skills_box.skills_box_first .skills_box_inner:nth-child(1) .skills_box_image_inner{
+	background-color: #11bb1a;
+}
+.skills_box.skills_box_first .skills_box_inner:nth-child(2) .skills_box_image_inner{
+	background-color: #3485fa;
+}
+.skills_box.skills_box_first .skills_box_inner:nth-child(3) .skills_box_image_inner{
+	background-color: #FDB813;
+}
+.skills_box.skills_box_second .skills_box_inner:nth-child(1) .skills_box_image_inner{
+	background-color: #3485fa;
+}
+.skills_box.skills_box_second .skills_box_inner:nth-child(2) .skills_box_image_inner{
+	background-color: #FDB813;
+}
+.skills_box.skills_box_second .skills_box_inner:nth-child(3) .skills_box_image_inner{
+	background-color: #11bb1a;
+}
+/*.skills_box.skills_box_first .skills_box_image_inner:nth-child(2){
 	background-color: #051E3B;
 }
-.skills_box .skills_box_image_inner:nth-child(2){
+.skills_box.skills_box_first .skills_box_image_inner:nth-child(3){
 	background-color: #051E3B;
 }
-.skills_box .skills_box_image_inner:nth-child(3){
+.skills_box.skills_box_first .skills_box_image_inner:nth-child(4){
 	background-color: #051E3B;
 }
-.skills_box .skills_box_image_inner:nth-child(4){
+.skills_box.skills_box_first .skills_box_image_inner:nth-child(5){
 	background-color: #051E3B;
 }
-.skills_box .skills_box_image_inner:nth-child(5){
+.skills_box.skills_box_first .skills_box_image_inner:nth-child(6){
 	background-color: #051E3B;
-}
-.skills_box .skills_box_image_inner:nth-child(6){
-	background-color: #051E3B;
-}
+}*/
 .skills_box_image_inner img {
 	max-width: 50px;
 	max-height: 50px;
@@ -691,16 +706,28 @@ span.typed-cursor.typed-cursor--blink {
 	margin: 0 14px;
 	padding: 6px 0px;
 }
-#myBtnContainer .btn.active_filter {
-	color: #FDB813;
-}
+#myBtnContainer .btn:after,
 #myBtnContainer .btn.active_filter:after {
 	content: '';
 	position: absolute;
-	left: 0;
 	right: 0;
-	bottom: 7px;
+	bottom: 4px;
+	width: 0;
 	border-bottom: 2px solid #FDB813;
+	transition: width 0.3s;
+	z-index: 1;
+}
+#myBtnContainer .btn:hover:after{
+	width: 100%;
+	left: 0;
+} 
+#myBtnContainer .btn:hover,
+#myBtnContainer .btn.active_filter {
+	color: #FDB813;
+}
+#myBtnContainer .btn.active_filter:after{
+	width: 100%;
+	left: 0;
 }
 .recent_works_image_sec_inner {
 	margin-top: 55px;
@@ -1248,6 +1275,9 @@ button.yellow_btn:hover svg{
 	header {
 		top: 20px;
 	}
+	header a.navbar-brand img {
+		max-width: 64px;
+	}
 	nav li .nav-link {
 		padding: 8px !important;
 		margin: 0 !important;
@@ -1263,10 +1293,19 @@ button.yellow_btn:hover svg{
 		left: -250px;
 		bottom: 0;
 		width: 250px;
-		background-color: #fdb813;
 		z-index: 1;
 		padding: 15px;
 		transition: all 0.3s;
+		background: rgba(253,184,19,1);
+		background: -moz-linear-gradient(-45deg, rgba(253,184,19,1) 0%, rgba(251,165,59,1) 100%);
+		background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(253,184,19,1)), color-stop(100%, rgba(251,165,59,1)));
+		background: -webkit-linear-gradient( 
+			-45deg, rgba(253,184,19,1) 0%, rgba(251,165,59,1) 100%);
+		background: -o-linear-gradient(-45deg, rgba(253,184,19,1) 0%, rgba(251,165,59,1) 100%);
+		background: -ms-linear-gradient(-45deg, rgba(253,184,19,1) 0%, rgba(251,165,59,1) 100%);
+		background: linear-gradient( 
+			135deg, rgba(253,184,19,1) 0%, rgba(251,165,59,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdb813', endColorstr='#fba53b', GradientType=1 );
 	}
 	.toggle_open {
 		left: 0;

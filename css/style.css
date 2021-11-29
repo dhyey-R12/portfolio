@@ -132,27 +132,28 @@ nav li:last-child .nav-link {
 }
 nav li .nav-link:hover ,
 nav li .active {
-	color: #051E3B !important;
-	transition: all 0.3s;
+    color: #051E3B !important;
+    transition: all 0.3s;
 }
 nav li .nav-link:after,
 nav li .active:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 100%;
-	bottom: 0;
-	height: 2px;
-	background-color: #FDB813;
-	transition: all 0.3s;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    width: 0;
+    border-bottom: 2px solid #FDB813;
+    transition: width 0.3s;
+    z-index: 1;
 }
 nav li .active:after{
-	left: 0;
-	right: 0;
+    width: 100%;
+    left: 0;
 }
 nav li .nav-link:hover:after{
-	right: 0;
-}
+    width: 100%;
+    left: 0;
+} 
 .navbar-toggler {
 	padding: 0;
 	height: 30px;
@@ -609,6 +610,23 @@ span.typed-cursor.typed-cursor--blink {
 	height: 81px;
 	text-align: center;
 	line-height: 81px;
+}
+.skills_box .skills_box_image_inner:nth-child(1){
+	background-color: #051E3B;
+}
+.skills_box .skills_box_image_inner:nth-child(2){
+	background-color: #051E3B;
+}
+.skills_box .skills_box_image_inner:nth-child(3){
+	background-color: #051E3B;
+}
+.skills_box .skills_box_image_inner:nth-child(4){
+	background-color: #051E3B;
+}
+.skills_box .skills_box_image_inner:nth-child(5){
+	background-color: #051E3B;
+}
+.skills_box .skills_box_image_inner:nth-child(6){
 	background-color: #051E3B;
 }
 .skills_box_image_inner img {
@@ -795,7 +813,6 @@ span.typed-cursor.typed-cursor--blink {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	margin-bottom: 488px;
 }
 .contact_form_section .heading_text p {
 	margin: 0 0 4px !important;
@@ -1343,7 +1360,6 @@ button.yellow_btn:hover svg{
 		font-size: 18px;
 		line-height: 28px;
 	}
-	.contact_form_section { margin-bottom: 376px; }
 	.banner_bg_image {display: none;}
 }
 @media only screen and (max-width: 767px){
@@ -1470,7 +1486,6 @@ button.yellow_btn:hover svg{
 	.heading_text h2:after {
 		height: 7px;
 	}
-	.contact_form_section { margin-bottom: 0; }
 	.footer_section {
 		position: relative;
 		z-index: 1;

@@ -855,6 +855,7 @@ span.typed-cursor.typed-cursor--blink {
 	color: #647084;
 	font-size: 20px;
 	font-weight: bold;
+	display: block;
 	border: 1px solid #647084;
 	margin-bottom: 45px;
 	padding: 10px 30px;
@@ -946,7 +947,6 @@ button.yellow_btn:hover svg{
 }
 .footer_section .footer_logo {
 	max-width: 150px;
-	max-height: 100px;
 	margin-bottom: 23px;
 }
 .footer_section p{
@@ -1115,8 +1115,22 @@ button.yellow_btn:hover svg{
 	.banner_bg_image {
 		max-width: 877px;
 	}
+	.heading_text p {
+		font-size: 22px !important;
+		margin: 0 0 6px !important;
+	}
+	.project_text h3,
+	.heading_text h2 {
+		font-size: 44px;
+	}
+	.heading_text h2:after {
+		bottom: 8px;
+	}
 }
 @media only screen and (max-width: 1199px){
+	nav .navbar-brand img {
+		max-width: 75px;
+	}
 	nav li .nav-link {
 		margin: 0px 20px 0px 0px !important;
 	}
@@ -1153,20 +1167,24 @@ button.yellow_btn:hover svg{
 		top: -30px;
 	}
 	.about_my_intro_sec {
-		padding: 161px 0 30px;
+		padding: 170px 0 90px;
 	}
 	.heading_text p {
-		font-size: 22px !important;
+		font-size: 20px !important;
 		line-height: 25px !important;
 		margin: 0 0 0px !important;
 	}
+	.project_text h3,
 	.heading_text h2 {
-		font-size: 44px;
+		font-size: 40px;
+	}
+	.heading_text h2:after {
+		bottom: 7px;
 	}
 	.about_my_intro_sec p {
 		margin: 5px 0 15px;
 		font-size: 18px;
-		line-height: 27px;
+		line-height: 28px;
 	}
 	.personal_info_sec_inner .personal_info_name, .personal_info_sec_inner a {
 		font-size: 16px;
@@ -1184,9 +1202,12 @@ button.yellow_btn:hover svg{
 	.yellow_btn {
 		height: 48px;
 		line-height: 46px;
+		margin-top: 18px;
 	}
+	.skills_sec,
 	.services_box_sec {
-		padding-top: 30px;
+		padding-top: 0 !important;
+		margin-top: 30px;
 	}
 	.services_box {
 		padding: 50px 15px 15px;
@@ -1222,17 +1243,15 @@ button.yellow_btn:hover svg{
 	.skills_box_inner {
 		margin-bottom: 36px;
 	}
-	.skills_sec {
-		margin-top: 30px;
-	}
 	.recent_works_image_sec_inner {
 		margin-top: 10px;
 	}
+	.contact_form_section,
+	.recent_works_section,
+	.skills_section,
+	.services_section,
 	.project_section_inner {
 		padding: 60px 0;
-	}
-	.project_text h3 {
-		font-size: 44px;
 	}
 	.project_text p {
 		width: 100%;
@@ -1251,24 +1270,23 @@ button.yellow_btn:hover svg{
 	.banner_bg_image {
 		max-width: 700px;
 	}
-}
-@media only screen and (max-width: 1024px){
-	.recent_works_image_text {
-		position: absolute;
-		top: 74%;
-		left: 0;
-		right: 0;
+	.about_my_intro_text {
+		padding-left: 15px;
 	}
-	.recent_works_image_text a {
-		width: 35px;
-		height: 35px;
-		margin: 0 8px;
-		line-height: 35px;
-		border-radius: 8px;
+	#myBtnContainer {
+		padding: 30px 0 18px;
 	}
-	.recent_works_image_text a img {
-		max-width: 16px;
-		max-height: 16px;
+	.contact_form_sec {
+		margin-top: 40px;
+	}
+	.banner_text h6 {
+		padding-top: 60px;
+	}
+	.footer_section .footer_logo {
+		max-width: 130px;
+	}
+	.top_footer {
+		padding: 65px 0;
 	}
 }
 @media only screen and (max-width: 991px){
@@ -1286,7 +1304,10 @@ button.yellow_btn:hover svg{
 	nav li .active {
 		color: #051E3B !important;
 	}
-	nav li .nav-link:after, nav li .active:after { content: none; }
+	nav li .nav-link:after, 
+	nav li .active:after {
+		content: none;
+	}
 	.navbar-collapse {
 		position: fixed;
 		top: 0;
@@ -1353,8 +1374,13 @@ button.yellow_btn:hover svg{
 	}
 	.about_my_intro_text {
 		padding-top: 30px;
+		padding-left: 0px;
 	}
-	.contact_form_section,.recent_works_section, .skills_section, .services_section {
+	.contact_form_section, 
+	.recent_works_section, 
+	.skills_section, 
+	.services_section, 
+	.project_section_inner {
 		padding: 50px 0;
 	}
 	.services_box_sec {
@@ -1391,8 +1417,7 @@ button.yellow_btn:hover svg{
 		padding: 50px 0;
 	}
 	.footer_section .footer_logo {
-		max-width: 120px;
-		max-height: 80px;
+		max-width: 100px;
 		margin-bottom: 18px;
 	}
 	.footer_section p {
@@ -1400,6 +1425,37 @@ button.yellow_btn:hover svg{
 		line-height: 28px;
 	}
 	.banner_bg_image {display: none;}
+	.recent_works_image_text {
+		position: absolute;
+		top: 74%;
+		left: 0;
+		right: 0;
+	}
+	.recent_works_image_text a {
+		width: 35px;
+		height: 35px;
+		margin: 0 8px;
+		line-height: 35px;
+		border-radius: 8px;
+	}
+	.recent_works_image_text a img {
+		max-width: 16px;
+		max-height: 16px;
+	}
+	.heading_text h2:after {
+		bottom: 6px;
+		height: 10px;
+	}
+	.project_text h3, .heading_text h2 {
+		font-size: 34px;
+	}
+	.contact_form_sec {
+		margin-top: 30px;
+	}
+	.contact_form textarea, .contact_form input {
+		padding: 10px 20px;
+		margin-bottom: 30px;
+	}
 }
 @media only screen and (max-width: 767px){
 	.banner_text h6 {
@@ -1444,11 +1500,11 @@ button.yellow_btn:hover svg{
 		max-width: 390px;
 	}
 	.heading_text p {
-		font-size: 18px !important;
+		font-size: 16px !important;
 		line-height: 15px !important;
 	}
-	.heading_text h2 {
-		font-size: 36px;
+	.project_text h3, .heading_text h2 {
+		font-size: 30px;
 	}
 	.about_my_intro_sec p {
 		margin: 0px 0 13px;
@@ -1469,10 +1525,11 @@ button.yellow_btn:hover svg{
 	.personal_info_sec_inner p span {
 		padding-left: 30px;
 	}
-	.about_my_intro_text {
-		padding-top: 20px;
-	}
-	.contact_form_section, .recent_works_section, .skills_section, .services_section {
+	.contact_form_section, 
+	.recent_works_section, 
+	.skills_section, 
+	.services_section, 
+	.project_section_inner {
 		padding: 40px 0;
 	}
 	.heading_text h6 {
@@ -1523,7 +1580,8 @@ button.yellow_btn:hover svg{
 		height: 170px;
 	}
 	.heading_text h2:after {
-		height: 7px;
+		height: 8px;
+		bottom: 6px;
 	}
 	.footer_section {
 		position: relative;
@@ -1540,6 +1598,9 @@ button.yellow_btn:hover svg{
 		max-width: 100px;
 		max-height: 70px;
 		margin-bottom: 15px;
+	}
+	.skills_sec, .services_box_sec {
+		margin-top: 20px;
 	}
 }
 @media only screen and (max-width: 575px){

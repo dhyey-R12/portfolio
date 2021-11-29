@@ -110,6 +110,18 @@ $(document).ready(function() {
 		e.preventDefault();
 		$('html, body').animate({scrollTop:0}, '300');
 	});
+
+	// Footer Sticky JS
+	var footerheight = $('.footer_section').height();
+	$(window).on("load resize", function(){
+		var screen = $(window).width();
+		if(screen > 767){
+			$('.contact_form_section').css("margin-bottom",footerheight);
+		}
+		else{
+			$('.contact_form_section').css("margin-bottom","0");
+		}
+	});
 });
 
 // Typed.JS

@@ -445,7 +445,7 @@ span.typed-cursor.typed-cursor--blink {
 	max-height: 28px;
 }
 .yellow_btn {
-	padding: 0 25px !important;
+	padding: 0 25px;
 	width: fit-content;
 	height: 55px;
 	border-radius: 30px;
@@ -471,7 +471,6 @@ span.typed-cursor.typed-cursor--blink {
 	stroke: #FDB813;
 	stroke-width: 2px;
 	max-width: 25px;
-	max-height: 25px;
 	margin-left: 14px;
 	transition: all 0.3s;
 }
@@ -1557,13 +1556,14 @@ button.yellow_btn:hover svg{
 		font-size: 16px;
 	}
 	.yellow_btn {
-		height: 50px;
+		height: 45px;
 		line-height: 50px;
+		font-size: 20px !important;
+		padding: 0 20px;
 	}
-	.yellow_btn img {
-		max-width: 20px;
-		max-height: 20px;
-		margin-left: 14px;
+	.yellow_btn svg {
+		max-width: 22px;
+		margin-left: 12px;
 	}
 	.contact_form textarea, .contact_form input {
 		margin-bottom: 20px;

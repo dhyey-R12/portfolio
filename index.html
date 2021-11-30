@@ -1,701 +1,691 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jippy Kids</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="icon" href="images/favicon.png">
+	<title>Mario Speedwagon</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- slick slider -->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- aos -->
+	<link rel="stylesheet" href="css/aos.css">
+	<!-- style.css -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<div class="loader-wrapper"><div class="loader"></div></div>
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="style_overflow_hidden">
+	<div id="loader-wrapper">
+		<div id="loader">
+			<img src="images/animation.gif">
+		</div>
+	</div>
+
+	<!-- Navigationbar -->
 	<header>
-		<a class="header_logo" href="index.html">
-			<img src="images/logo.png">
-		</a>
-		<a href="javascript:void(0);" class="navbar_toggler csp-1199" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			<div class="navbar_toggler_inner"></div>
-		</a>
-		<nav class="custom_navbar">
-			<ul>
-				<li class="home">
-					<a href="#">ホーム<span>HOME</span></a>
-				</li>
-				<li class="services">
-					<a href="#">サービス内容<span>SERVICE</span></a>
-				</li>
-				<li class="english_lessons">
-					<a href="#">英検対策レッスン<span>ENGLISH LESSONS</span></a>
-				</li>
-				<li class="fusaga_fee">
-					<a href="#">利用料金<span>FUSAGE FEE</span></a>
-				</li>
-				<li class="information">
-					<a href="#">施設案内<span>INFORMATION</span></a>
-				</li>
-				<li class="online_school">
-					<a href="#">オンラインスクール<span>ONLINE SCHOOL</span></a>
-				</li>
-			</ul>
-			<div class="header_contact_details">
-				<a class="contact_number" href="tel:0338090456"><i class="fas fa-phone-alt"></i>03-3809-0456</a>
-				<a class="contact_form" href="#"><i class="far fa-envelope"></i>お問い合わせ</a>
+		<div class="top_nav">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png">
+					</a>
+					<button class="navbar-toggler">
+						<div class="navbar-toggler-inner"></div>
+					</button>
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link active" href="#home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About Me</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#service">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#portfolio">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
-		</nav>
+		</div>
 	</header>
-	<section class="banner_section">
-		<h2>もっと<span class="blue_text">遊ぶ楽しさ</span>と<span class="pink_text">考える力</span>を</h2>
-		<div class="custom_container">
-			<div class="banner_slider_container">
-				<span class="yellow_corner"></span>
-				<span class="blue_corner"></span>
-				<span class="pink_corner"></span>
-				<span class="green_corner"></span>
-				<div class="banner_full_width_slider">
-					<div class="banner_single_slide">
-						<div class="banner_image_wrap">
-							<img src="images/banner_image_1.png" alt="banner image">
-						</div>
-					</div>
-					<div class="banner_single_slide">
-						<div class="banner_image_wrap">
-							<img src="images/banner_image_2.png" alt="banner image">
-						</div>
-					</div>
-					<div class="banner_single_slide">
-						<div class="banner_image_wrap">
-							<img src="images/banner_image_1.png" alt="banner image">
-						</div>
-					</div>
-					<div class="banner_single_slide">
-						<div class="banner_image_wrap">
-							<img src="images/banner_image_2.png" alt="banner image">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="about_section">
-		<div class="custom_container">
-			<div class="grade_enrollment_box_container">
-				<div class="custom_row">
-					<div class="custom_col_12">
-						<div class="grade_enrollment_box pink_grade">
-							<h5><p class="bg_chat_icon">クリック</p>新1年生入会説明会開催中</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="common_heading">
-				<h2>ZIPPY KIDSの特徴</h2>
-				<p>ABOUT</p>
-			</div>
-			<div class="about_content_with_image">
-				<div class="custom_row">
-					<div class="custom_col_2">
-						<img src="images/about_image_1.png" alt="about image">
-						<h5 class="yellow_text">英語レッスン</h5>
-						<p>小学生から英検対策の<br class="cpc">英語レッスンを毎日実施</p>
-					</div>
-					<div class="custom_col_2">
-						<img src="images/about_image_2.png" alt="about image">
-						<h5 class="blue_text">レクリエーション</h5>
-						<p>200種類以上の<br class="cpc">レクリエーションを導入</p>
-					</div>
-					<div class="custom_col_2">
-						<img src="images/about_image_3.png" alt="about image">
-						<h5 class="green_text">課外活動</h5>
-						<p>キャンプ、フィールドアスレチック、工場見学などの課外活動が充実</p>
-					</div>
-					<div class="custom_col_2">
-						<img src="images/about_image_4.png" alt="about image">
-						<h5 class="orange_text">時間を気にせず</h5>
-						<p>最大22時までお預かり可能20時までなら<br class="cpc">延長料金無し</p>
-					</div>
-					<div class="custom_col_2">
-						<img src="images/about_image_5.png" alt="about image">
-						<h5 class="pink_text">無料習い事送迎</h5>
-						<p>1.5キロ以内の習い事まで<br class="cpc">無料で送迎します。</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="new_section">
-		<div class="custom_container">
-			<div class="custom_row">
-				<div class="custom_col_12">
-					<div class="common_heading">
-						<h2>お知らせ</h2>
-						<p>NEW</p>
-					</div>
-					<ul class="new_list">
-						<li><span>2021.07.19</span>2021年ZIPPYKIDS 縁日開催 ～NEXT ZIPPYクラブ交流会～</li>
-						<li><span>2021.07.13</span>夏休み期間中のイベントスケジュールをアップしました</li>
-						<li><span>2021.06.10</span>2021年夏休みチケットコースの受付を開始します</li>
-						<li><span>2021.03.18</span>2022年度　新1年生入会説明会を開催します</li>
-					</ul>
-					<a href="#" class="common_btn">一覧を見る</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="services_section">
-		<div class="custom_container">
-			<div class="common_heading">
-				<h2>ZIPPY KIDSのサービス</h2>
-				<p>SERVICE</p>
-			</div>
-			<div class="services_list_container">
-				<div class="custom_row">
-					<div class="custom_col_2">
-						<div class="circle yellow">
-							<img src="images/service_image_1.png" alt="image">
-							<p>1日のタイム<br class="cpc">スケジュール</p>
-						</div>
-					</div>
-					<div class="custom_col_2">
-						<div class="circle blue">
-							<img src="images/service_image_2.png" alt="image">
-							<p>イベント</p>
-						</div>
-					</div>
-					<div class="custom_col_2">
-						<div class="circle green">
-							<img src="images/service_image_3.png" alt="image">
-							<p>送迎</p>
-						</div>
-					</div>
-					<div class="custom_col_2">
-						<div class="circle orange">
-							<img src="images/service_image_4.png" alt="image">
-							<p>食事</p>
-						</div>
-					</div>
-					<div class="custom_col_2">
-						<div class="circle pink">
-							<img src="images/service_image_5.png" alt="image">
-							<p>安全管理</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<a href="#" class="common_btn">一覧を見る</a>
-		</div>
-	</section>
-	<section class="english_lession_section">
-		<div class="bordered_container corner_blue">
-			<div class="custom_container">
-				<div class="common_heading">
-					<h2>英検対策レッスン</h2>
-					<p>ENGLISH LESSONS</p>
-				</div>
-				<div class="english_lession_content">
-					<div class="custom_row">
-						<div class="custom_col_image">
-							<div class="english_lession_image">
-								<img src="images/english_lession_image.png">
-							</div>
-						</div>
-						<div class="custom_col_text">
-							<div class="english_lession_text">
-								<p>ZIPPY KIDSでは、外国人講師による約５０分の英語レッスンを行っています。<br class="cpc">
-									特に１年生のお子様の集中力が持続するのは、最長でも５０分程度です。<br class="cpc">
-								まずは興味を持ってもらうため、レクリエーションの時間を入れ、最後の２０分はテキストを使った座学のレッスンとなります。児童英検の検定試験はリスニングのみ。まずは、音から英語を取り入れ『聞く力』の強化と『より多くの単語習得』を目指します。</p>
-							</div>
-						</div>
-						<a href="#" class="common_btn">英検対策レッスンについて</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="fusage_fee_section">
-		<div class="bordered_container corner_green">
-			<div class="custom_container">
-				<div class="common_heading">
-					<h2>利用料金</h2>
-					<p>FUSAGE FEE</p>
-				</div>
-				<div class="fusaga_fee_content">
-					<div class="custom_row fusaga_fee_yellow_box custom_row_reverse">
-						<div class="custom_col_6">
-							<div class="fusaga_fee_image">
-								<img src="images/fusage_fee_image_1.png">
-							</div>
-						</div>
-						<div class="custom_col_6">
-							<div class="fusaga_fee_text_inner">
-								<h3>イングリッシュコース</h3>
-								<p>この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーです<br>
-								文字の大きさ・量・字間・行間等を確認するために入れています</p>
-								<ul class="fusaga_fee_text_list">
-									<li><p>入会金 <span>23,100</span>円</p></li>
-									<li><p>施設管理費 <span>5,500</span>円／3ヶ月</p></li>
-									<li><p>月会費 <span>30,800</span>円〜</p></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="custom_row fusaga_fee_blue_box">
-						<div class="custom_col_6">
-							<div class="fusaga_fee_image">
-								<img src="images/fusage_fee_image_2.png">
-							</div>
-						</div>
-						<div class="custom_col_6">
-							<div class="fusaga_fee_text_inner">
-								<h3>荒川校 レギュラーコース</h3>
-								<p>この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーです<br>
-								文字の大きさ・量・字間・行間等を確認するために入れています</p>
-								<ul class="fusaga_fee_text_list">
-									<li><p>入会金 <span>19,800</span>円</p></li>
-									<li><p>施設管理費 <span>5,500</span>円／3ヶ月</p></li>
-									<li><p>月会費 <span>9,900</span>円〜</p></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="custom_row fusaga_fee_green_box custom_row_reverse">
-						<div class="custom_col_6">
-							<div class="fusaga_fee_image">
-								<img src="images/fusage_fee_image_3.png">
-							</div>
-						</div>
-						<div class="custom_col_6">
-							<div class="fusaga_fee_text_inner">
-								<h3>スポット会員</h3>
-								<p>この文章はダミーです文字の大きさ・量・字間・行間等を確認するために入れていますこの文章はダミーです<br>
-								文字の大きさ・量・字間・行間等を確認するために入れています</p>
-								<ul class="fusaga_fee_text_list">
-									<li><p>入会金 <span>8,800</span>円</p></li>
-									<li><p>施設管理費 <span>0</span>円／3ヶ月</p></li>
-									<li><p>月会費 <span>4,290</span>円〜</p></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="common_btn">利用料金ついて</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="facility_information_section">
-		<div class="bordered_container corner_orange">
-			<div class="custom_container">
-				<div class="common_heading">
-					<h2>施設案内</h2>
-					<p>FACILITY INFORMATION</p>
-				</div>
-				<div class="common_heading_slide_line">
-					<p>都内３エリアに利用しやすい立地にて開所しております。<br class="cpc">
-					急な震災などがあった場合でも全校舎１階部に入居しているので安心です。</p>
-				</div>
-				<div class="facility_information_map_box_sec">
-					<div class="custom_row">
-						<div class="custom_col_4">
-							<div class="facility_information_map_box">
-								<div class="facility_information_map">
-									<iframe class="facility_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.2439526532157!2d139.77023131460717!3d35.74480823409124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188de0225e504b%3A0xea19aa79a8025094!2s1f%2C%203-ch%C5%8Dme-6-8%20Higashiogu%2C%20Arakawa%20City%2C%20Tokyo%20116-0012%2C%20Japan!5e0!3m2!1sen!2sin!4v1637918748215!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-								</div>
-								<div class="facility_information_map_text">	
-									<div class="facility_information_map_text_inner">
-										<h4>ZIPPY KIDS荒川校</h4>
-										<p>〒116-0012<br class="cpc">
-											東京都荒川区東尾久3-6-8　1F＆B1<br class="cpc">
-										TEL03-3809-0456</p>
-									</div>
-									<div class="facility_map_box_text_gray">
-										<p>クリック</p>
-									</div>
-									<div class="facility_map_box_text_color">
-										<p class="facility_map_box_text_inner">
-											<span class="color_yellow">b</span>
-											<span class="color_blue">l</span>
-											<span class="color_green">o</span>
-											<span class="color_pink">g</span>
-										</p>
-										<p>ZIPPY KIDS 荒川校</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="custom_col_4">
-							<div class="facility_information_map_box">
-								<div class="facility_information_map">
-									<iframe class="facility_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.2439526532157!2d139.77023131460717!3d35.74480823409124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188de0225e504b%3A0xea19aa79a8025094!2s1f%2C%203-ch%C5%8Dme-6-8%20Higashiogu%2C%20Arakawa%20City%2C%20Tokyo%20116-0012%2C%20Japan!5e0!3m2!1sen!2sin!4v1637918748215!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-								</div>
-								<div class="facility_information_map_text">	
-									<div class="facility_information_map_text_inner">
-										<h4>ZIPPY KIDS荒川校</h4>
-										<p>〒111-0036<br class="cpc">
-											東京都台東区松が谷3-20-14 1F<br class="cpc">
-										TEL03-3842-2780</p>
-									</div>
-									<div class="facility_map_box_text_gray">
-										<p>クリック</p>
-									</div>
-									<div class="facility_map_box_text_color">
-										<p class="facility_map_box_text_inner">
-											<span class="color_yellow">b</span>
-											<span class="color_blue">l</span>
-											<span class="color_green">o</span>
-											<span class="color_pink">g</span>
-										</p>
-										<p>ZIPPY KIDS 荒川校</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="custom_col_4">
-							<div class="facility_information_map_box">
-								<div class="facility_information_map">
-									<iframe class="facility_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.2439526532157!2d139.77023131460717!3d35.74480823409124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188de0225e504b%3A0xea19aa79a8025094!2s1f%2C%203-ch%C5%8Dme-6-8%20Higashiogu%2C%20Arakawa%20City%2C%20Tokyo%20116-0012%2C%20Japan!5e0!3m2!1sen!2sin!4v1637918748215!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-								</div>
-								<div class="facility_information_map_text">	
-									<div class="facility_information_map_text_inner">
-										<h4>ZIPPY KIDS荒川校</h4>
-										<p>〒113-0033<br class="cpc">
-											東京都文京区本郷7-2-2 1F<br class="cpc">
-										TEL03-3812-3557</p>
-									</div>
-									<div class="facility_map_box_text_gray">
-										<p>クリック</p>
-									</div>
-									<div class="facility_map_box_text_color">
-										<p class="facility_map_box_text_inner">
-											<span class="color_yellow">b</span>
-											<span class="color_blue">l</span>
-											<span class="color_green">o</span>
-											<span class="color_pink">g</span>
-										</p>
-										<p>ZIPPY KIDS 荒川校</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="common_btn">施設案内ついて</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="online_school_section">
-		<div class="bordered_container corner_pink">
-			<div class="custom_container">
-				<div class="common_heading">
-					<h2>オンラインスクール</h2>
-					<p>ONLINE　SCHOOL</p>
-				</div>
-				<div class="common_heading_slide_line">
-					<p>『Zippy Online-School』では、勉強習慣の定着に加え、受験の際に必要とされる英語４技能<br class="cpc">
-						（リーディング、リスニング、ライティング、スピーキング）に対応出来る、<br class="cpc">
-						『英検』の習得に特化したオンラインスクールとして、質の高い英語教育の場を提供してまいります。
-					</p>
-				</div>
-				<div class="online_school_content">
-					<p class="online_school_content_heading">Zippy Online-School<span>の特徴</span></p>
-					<div class="custom_row">
-						<div class="custom_col_3">
-							<div class="online_school_box online_school_box_yellow">
-								<div class="online_school_box_image">
-									<div class="online_school_box_image_inner">
-										<img src="images/online_school_image_1.png">
-									</div>
-									<div class="online_school_box_number">
-										<svg xmlns="http://www.w3.org/2000/svg" width="52" height="64.002" viewBox="0 0 52 64.002">
-											<g id="Subtraction_14" data-name="Subtraction 14" transform="translate(2872)">
-												<path d="M -2821.499755859375 61.13871383666992 L -2845.14599609375 44.76665496826172 L -2845.999755859375 44.17548370361328 L -2846.853515625 44.7666130065918 L -2870.5 61.13706970214844 L -2870.5 1.500004053115845 L -2821.499755859375 1.500004053115845 L -2821.499755859375 61.13871383666992 Z" stroke="none"/>
-												<path d="M -2822.999755859375 58.27569198608398 L -2822.999755859375 3.000004053115845 L -2869 3.000004053115845 L -2869 58.27422332763672 L -2845.999755859375 42.35107040405273 L -2822.999755859375 58.27569198608398 M -2819.999755859375 64.00180053710938 L -2820.001220703125 64.00071716308594 L -2845.999755859375 45.99990463256836 L -2872 63.99990463256836 L -2872 4.083251951669808e-06 L -2819.999755859375 4.083251951669808e-06 L -2819.999755859375 64.00180053710938 Z" stroke="none" fill="#fff"/>
-											</g>
-										</svg>
-										<p>1</p>
-									</div>
-								</div>
-								<div class="online_school_box_text">
-									<p>外国人講師による<br class="cpc">
-									オンラインレッスン</p>
-								</div>
-							</div>
-						</div>
-						<div class="custom_col_3">
-							<div class="online_school_box online_school_box_blue">
-								<div class="online_school_box_image">
-									<div class="online_school_box_image_inner">
-										<img src="images/online_school_image_2.png">
-									</div>
-									<div class="online_school_box_number">
-										<svg xmlns="http://www.w3.org/2000/svg" width="52" height="64.002" viewBox="0 0 52 64.002">
-											<g id="Subtraction_14" data-name="Subtraction 14" transform="translate(2872)">
-												<path d="M -2821.499755859375 61.13871383666992 L -2845.14599609375 44.76665496826172 L -2845.999755859375 44.17548370361328 L -2846.853515625 44.7666130065918 L -2870.5 61.13706970214844 L -2870.5 1.500004053115845 L -2821.499755859375 1.500004053115845 L -2821.499755859375 61.13871383666992 Z" stroke="none"/>
-												<path d="M -2822.999755859375 58.27569198608398 L -2822.999755859375 3.000004053115845 L -2869 3.000004053115845 L -2869 58.27422332763672 L -2845.999755859375 42.35107040405273 L -2822.999755859375 58.27569198608398 M -2819.999755859375 64.00180053710938 L -2820.001220703125 64.00071716308594 L -2845.999755859375 45.99990463256836 L -2872 63.99990463256836 L -2872 4.083251951669808e-06 L -2819.999755859375 4.083251951669808e-06 L -2819.999755859375 64.00180053710938 Z" stroke="none" fill="#fff"/>
-											</g>
-										</svg>
-										<p>2</p>
-									</div>
-								</div>
-								<div class="online_school_box_text">
-									<p>実績のある講師陣</p>
-								</div>
-							</div>
-						</div>
-						<div class="custom_col_3">
-							<div class="online_school_box online_school_box_green">
-								<div class="online_school_box_image">
-									<div class="online_school_box_image_inner">
-										<img src="images/online_school_image_3.png">
-									</div>
-									<div class="online_school_box_number">
-										<svg xmlns="http://www.w3.org/2000/svg" width="52" height="64.002" viewBox="0 0 52 64.002">
-											<g id="Subtraction_14" data-name="Subtraction 14" transform="translate(2872)">
-												<path d="M -2821.499755859375 61.13871383666992 L -2845.14599609375 44.76665496826172 L -2845.999755859375 44.17548370361328 L -2846.853515625 44.7666130065918 L -2870.5 61.13706970214844 L -2870.5 1.500004053115845 L -2821.499755859375 1.500004053115845 L -2821.499755859375 61.13871383666992 Z" stroke="none"/>
-												<path d="M -2822.999755859375 58.27569198608398 L -2822.999755859375 3.000004053115845 L -2869 3.000004053115845 L -2869 58.27422332763672 L -2845.999755859375 42.35107040405273 L -2822.999755859375 58.27569198608398 M -2819.999755859375 64.00180053710938 L -2820.001220703125 64.00071716308594 L -2845.999755859375 45.99990463256836 L -2872 63.99990463256836 L -2872 4.083251951669808e-06 L -2819.999755859375 4.083251951669808e-06 L -2819.999755859375 64.00180053710938 Z" stroke="none" fill="#fff"/>
-											</g>
-										</svg>
-										<p>3</p>
-									</div>
-								</div>
 
-								<div class="online_school_box_text">
-									<p>ご自宅や外出先で<br class="cpc">
-									視聴可能</p>
+	<!-- banner -->
+	<section class="banner_section" id="home">
+		<img src="images/banner_image_2.png" class="banner_bg_image">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 d-flex align-items-center">
+					<div class="banner_text" data-aos="fade-right" data-aos-duration="1500">
+						<h6>Hi, I am</h6>
+						<h1>Mario Speedwagon</h1>
+						<!-- <h5>Digital Marketing Expert</h5> -->
+						<div class="banner_text_inner">
+							<h5></h5>
+						</div>
+						<p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="banner_image" data-aos="fade-left" data-aos-duration="1500">
+						<img src="images/banner_image1.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- about_section -->
+	<section class="about_section" id="about">
+		<div class="container">
+			<div class="about_info_sec" data-aos="fade-down">
+				<div class="row m-0">
+					<div class="col-md-6 col-lg-4 d-flex flex-wrap align-content-center justify-content-center">
+						<div class="about_info_box d-flex flex-wrap align-items-center justify-content-center">
+							<div class="about_info_box_image">
+								<img src="images/surface.png">
+							</div>
+							<div class="about_info_box_text pl-3">
+								<h5 class="m-0">1.8 Years Job</h5>
+								<p class="m-0">Experience</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 d-flex flex-wrap align-content-center justify-content-center about_info_box_second mt-3 mt-md-0">
+						<div class="about_info_box d-flex flex-wrap align-items-center justify-content-center">
+							<div class="about_info_box_image">
+								<img src="images/briefing.png">
+							</div>
+							<div class="about_info_box_text pl-3">
+								<h5 class="m-0">50+ Projects</h5>
+								<p class="m-0">Completed</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 d-flex flex-wrap align-content-center justify-content-center mx-auto mx-lg-0 mt-3 mt-lg-0">
+						<div class="about_info_box d-flex flex-wrap align-items-center justify-content-center">
+							<div class="about_info_box_image">
+								<img src="images/support.png">
+							</div>
+							<div class="about_info_box_text pl-3">
+								<h5 class="m-0">Support</h5>
+								<p class="m-0">Online 24/7</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about_my_intro_sec">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="about_my_intro_image" data-aos="fade-left">
+							<img src="images/person0.png">
+						</div>
+					</div>
+					<div class="col-lg-7 d-flex flex-wrap align-content-center">
+						<div class="about_my_intro_text" data-aos="fade-right">
+							<div class="heading_text">
+								<p>My Intro</p>
+								<h2>About Me</h2>
+							</div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<div class="personal_info_sec">
+								<div class="personal_info_sec_inner">
+									<ul>
+										<li>
+											<p class="m-0"><img src="images/person-outline.png"><span>Name :</span></p>
+										</li>
+										<li>
+											<p class="m-0 personal_info_name">Mario Speedwagon</p>
+										</li>
+									</ul>
+								</div>
+								<div class="personal_info_sec_inner">
+									<ul>
+										<li>
+											<p class="m-0"><img src="images/call-outline.png"><span>Phone :</span></p>
+										</li>
+										<li>
+											<a href="#" class="m-0">+081 12586 86397</a>
+										</li>
+									</ul>
+								</div>
+								<div class="personal_info_sec_inner">
+									<ul>
+										<li>
+											<p class="m-0"><img src="images/mail.png"><span>Email :</span></p>
+										</li>
+										<li>
+											<a href="#" class="m-0">mariospeedwagon.123@gmail.com</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<a href="#" class="yellow_btn">Download CV <svg xmlns="http://www.w3.org/2000/svg" width="25.737" height="22.572" viewBox="0 0 25.737 22.572">
+								<path id="cloud-download-outline" class="cls-1" d="M31.034,62.242h3.758c2.72,0,4.945-1.049,4.945-3.739s-2.621-3.633-4.747-3.739A7.117,7.117,0,0,0,27.869,48a6.539,6.539,0,0,0-6.33,4.51C18.572,52.792,16,54.284,16,57.376s2.67,4.866,5.934,4.866H24.7m0,3.17,3.165,3.16,3.165-3.16M27.869,56.7V67.783" transform="translate(-15 -47)"/>
+							</svg> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- services_section -->
+	<section class="services_section" id="service">
+		<div class="container">
+			<div class="heading_text text-center" data-aos="fade-up">
+				<p>What we do</p>
+				<h2>Services</h2>
+			</div>
+			<div class="services_box_sec">
+				<div class="row">
+					<div class="col-lg-4 d-flex">
+						<div class="services_box blue_border_box" data-aos="flip-left">
+							<div class="services_image_box blue_service_box">
+								<img src="images/ux-interface.png">
+							</div>
+							<h6>UX Research</h6>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="services_box yellow_border_box" data-aos="flip-left">
+							<div class="services_image_box yellow_service_box">
+								<img src="images/coding.png">
+							</div>
+							<h6>Web Development</h6>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 d-flex">
+						<div class="services_box green_border_box" data-aos="flip-left">
+							<div class="services_image_box green_service_box">
+								<img src="images/website-content.png">
+							</div>
+							<h6>Web design</h6>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- skills_section -->
+	<section class="skills_section" id="skills">
+		<div class="container">
+			<div class="heading_text text-center" data-aos="fade-up">
+				<p>Why Choose Me</p>
+				<h2>Skills</h2>
+				<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+				been the industry's standard dummy text ever since the 1500s,</h6>
+			</div>
+			<div class="skills_sec">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="skills_box skills_box_first">
+							<div class="skills_box_inner d-flex align-items-center" data-aos="flip-down">
+								<div class="skills_box_image">
+									<div class="skills_box_image_inner">
+										<img src="images/coding.png">
+									</div>
+								</div>
+								<div class="skills_box_progress_bar">
+									<div class="progressbar_lable d-flex">
+										<p class="mr-auto">photoshop</p>
+										<p class="ml-auto progress_count">95</p>
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skills_box_inner d-flex align-items-center" data-aos="flip-down">
+								<div class="skills_box_image">
+									<div class="skills_box_image_inner">
+										<img src="images/coding.png">
+									</div>
+								</div>
+								<div class="skills_box_progress_bar">
+									<div class="progressbar_lable d-flex">
+										<p class="mr-auto">photoshop</p>
+										<p class="ml-auto progress_count">80</p>
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skills_box_inner d-flex align-items-center" data-aos="flip-down">
+								<div class="skills_box_image">
+									<div class="skills_box_image_inner">
+										<img src="images/coding.png">
+									</div>
+								</div>
+								<div class="skills_box_progress_bar">
+									<div class="progressbar_lable d-flex">
+										<p class="mr-auto">photoshop</p>
+										<p class="ml-auto progress_count">50</p>
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%"></div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="custom_col_3">
-							<div class="online_school_box online_school_box_orange">
-								<div class="online_school_box_image">
-									<div class="online_school_box_image_inner">
-										<img src="images/online_school_image_4.png">
-									</div>
-									<div class="online_school_box_number">
-										<svg xmlns="http://www.w3.org/2000/svg" width="52" height="64.002" viewBox="0 0 52 64.002">
-											<g id="Subtraction_14" data-name="Subtraction 14" transform="translate(2872)">
-												<path d="M -2821.499755859375 61.13871383666992 L -2845.14599609375 44.76665496826172 L -2845.999755859375 44.17548370361328 L -2846.853515625 44.7666130065918 L -2870.5 61.13706970214844 L -2870.5 1.500004053115845 L -2821.499755859375 1.500004053115845 L -2821.499755859375 61.13871383666992 Z" stroke="none"/>
-												<path d="M -2822.999755859375 58.27569198608398 L -2822.999755859375 3.000004053115845 L -2869 3.000004053115845 L -2869 58.27422332763672 L -2845.999755859375 42.35107040405273 L -2822.999755859375 58.27569198608398 M -2819.999755859375 64.00180053710938 L -2820.001220703125 64.00071716308594 L -2845.999755859375 45.99990463256836 L -2872 63.99990463256836 L -2872 4.083251951669808e-06 L -2819.999755859375 4.083251951669808e-06 L -2819.999755859375 64.00180053710938 Z" stroke="none" fill="#fff"/>
-											</g>
-										</svg>
-										<p>4</p>
+					</div>
+					<div class="col-lg-6">
+						<div class="skills_box skills_box_second">
+							<div class="skills_box_inner d-flex align-items-center" data-aos="flip-down">
+								<div class="skills_box_image">
+									<div class="skills_box_image_inner">
+										<img src="images/coding.png">
 									</div>
 								</div>
+								<div class="skills_box_progress_bar">
+									<div class="progressbar_lable d-flex">
+										<p class="mr-auto">photoshop</p>
+										<p class="ml-auto progress_count">98</p>
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 98%"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skills_box_inner d-flex align-items-center" data-aos="flip-down">
+								<div class="skills_box_image">
+									<div class="skills_box_image_inner">
+										<img src="images/coding.png">
+									</div>
+								</div>
+								<div class="skills_box_progress_bar">
+									<div class="progressbar_lable d-flex">
+										<p class="mr-auto">photoshop</p>
+										<p class="ml-auto progress_count">90</p>
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"></div>
+									</div>
+								</div>
+							</div>
+							<div class="skills_box_inner d-flex align-items-center" data-aos="flip-down">
+								<div class="skills_box_image">
+									<div class="skills_box_image_inner">
+										<img src="images/coding.png">
+									</div>
+								</div>
+								<div class="skills_box_progress_bar">
+									<div class="progressbar_lable d-flex">
+										<p class="mr-auto">photoshop</p>
+										<p class="ml-auto progress_count">70</p>
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- recent_works_section -->
+	<section class="recent_works_section" id="portfolio">
+		<div class="container">
+			<div class="heading_text text-center" data-aos="fade-up">
+				<p>Recent Works</p>
+				<h2>Portfolio</h2>
+				<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+				been the industry's standard dummy text ever since the 1500s,</h6>
+			</div>
+			<div class="recent_works_image_sec" data-aos="fade-down">
+				<div id="myBtnContainer">
+					<button class="btn active_filter" data-filter="*">All</button>
+					<button class="btn" data-filter=".webdesign">Web</button>
+					<button class="btn" data-filter=".webdev">Ui/Ux</button>
+					<button class="btn" data-filter=".brand">Development</button>
+				</div>
+				<div class="recent_works_image_sec_inner">
+					<div class="grid row">
+						<div class="grid-item col-sm-6 col-lg-3 webdesign">
+							<div class="recent_works_image_box">
+								<div class="recent_works_image_small">
+									<img src="images/portfolio-6.png">
+								</div>
+								<div class="recent_works_image_text">
+									<a href="#" class="foreign"><img src="images/foreign.png"></a>
+									<a href="#" class="readmore" data-toggle="modal" data-target="#myModal"><img src="images/readmore.png"></a>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item col-sm-6 col-lg-3 webdev">
+							<div class="recent_works_image_box">
+								<div class="recent_works_image_small">
+									<img src="images/portfolio-7.png">
+								</div>
+								<div class="recent_works_image_text">
+									<a href="#" class="foreign"><img src="images/foreign.png"></a>
+									<a href="#" class="readmore" data-toggle="modal" data-target="#myModal2"><img src="images/readmore.png"></a>
+									
+								</div>
+							</div>
+						</div>
+						<div class="grid-item col-12 col-lg-6 brand">
+							<div class="recent_works_image_box mb-lg-0">
+								<div class="recent_works_image_big">
+									<img src="images/portfolio-8.png">
+								</div>
+								<div class="recent_works_image_text">
+									<a href="#" class="foreign"><img src="images/foreign.png"></a>
+									<a href="#" class="readmore" data-toggle="modal" data-target="#myModal3"><img src="images/readmore.png"></a>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item col-sm-6 col-lg-3 brand">
+							<div class="recent_works_image_box mb-sm-0">
+								<div class="recent_works_image_small">
+									<img src="images/portfolio-9.png">
+								</div>
+								<div class="recent_works_image_text">
+									<a href="#" class="foreign"><img src="images/foreign.png"></a>
+									<a href="#" class="readmore" data-toggle="modal" data-target="#myModal4"><img src="images/readmore.png"></a>
+								</div>
+							</div>
+						</div>
+						<div class="grid-item col-sm-6 col-lg-3 webdesign">
+							<div class="recent_works_image_box mb-0">
+								<div class="recent_works_image_small">
+									<img src="images/portfolio-10.png">
+								</div>
+								<div class="recent_works_image_text">
+									<a href="#" class="foreign"><img src="images/foreign.png"></a>
+									<a href="#" class="readmore" data-toggle="modal" data-target="#myModal5"><img src="images/readmore.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="myModal">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
 
-								<div class="online_school_box_text">
-									<p>準会場にて<br class="cpc">
-									模擬試験を実施</p>
-								</div>
-							</div>
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Heading1</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
 						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							Modal body..
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+
 					</div>
-					<a href="#" class="common_btn">オンラインスクールついて</a>
+				</div>
+			</div>
+			<div class="modal" id="myModal2">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Heading</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							Modal body..
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="myModal3">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Heading</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							Modal body..
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="myModal4">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Heading</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							Modal body..
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="myModal5">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Heading</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<!-- Modal body -->
+						<div class="modal-body">
+							Modal body..
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="feel_free_to_contact_section">
-		<div class="contact_container">
-			<div class="custom_row">
-				<div class="custom_col_12">
-					<div class="title_container">
-						<h2>お気軽にお問い合わせください</h2>
-					</div>
-				</div>
-				<div class="custom_col_6">
-					<a href="tel:0338090456" class="button_yellow">
-						<h5><i class="fas fa-phone-alt"></i>03-3809-0456</h5>
-						<p>営業時間 9:00〜17:00 (月〜金)</p>
-					</a>
-				</div>
-				<div class="custom_col_6">
-					<a href="tel:0338090456" class="button_cyan">
-						<h5><i class="far fa-envelope"></i>お問い合わせ</h5>
-					</a>
+	<!-- project_section -->
+	<section class="project_section">
+		<div class="project_section_inner" data-aos="fade-down">
+			<div class="container">
+				<div class="project_text text-center">
+					<h3>Have a Project on Your Mind</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+					been the industry's standard dummy text ever since the 1500s,</p>
+					<a href="#contact" class="yellow_btn white_btn mx-auto">Contact Me <svg xmlns="http://www.w3.org/2000/svg" width="30.407" height="30.344" viewBox="0 0 30.407 30.344">
+						<path id="call-outline" class="cls-1" d="M75.565,70.313a25.106,25.106,0,0,0-4.994-3.336c-1.662-.837-1.8-.906-3.106.065-.872.648-1.451,1.227-2.471,1.009a13.235,13.235,0,0,1-5.177-3.379,13.675,13.675,0,0,1-3.457-5.232c-.218-1.017.37-1.589,1.012-2.463.9-1.231.836-1.437.063-3.1a22.735,22.735,0,0,0-3.345-4.98c-1.175-1.161-1.175-.956-1.933-.641a10.956,10.956,0,0,0-1.767.942,5.294,5.294,0,0,0-2.127,2.239c-.425.908-.616,3.036,1.578,7.022a34.784,34.784,0,0,0,6.919,9.2,37.858,37.858,0,0,0,9.217,6.894c4.43,2.481,6.13,2,7.04,1.573a5.277,5.277,0,0,0,2.246-2.121,10.884,10.884,0,0,0,.944-1.765C76.522,71.488,76.728,71.488,75.565,70.313Z" transform="translate(-46.969 -47.088)"/>
+					</svg></a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="grade_enrollment_section">
-		<div class="custom_container">
-			<div class="grade_enrollment_box_container">
-				<div class="custom_row">
-					<div class="custom_col_12">
-						<div class="grade_enrollment_box pink_grade">
-							<h5><p class="bg_chat_icon">クリック</p>新1年生入会説明会開催中</h5>
-						</div>
-					</div>
-					<div class="custom_col_4">
-						<div class="grade_enrollment_box yellow_grade">
-							<p>クリック</p>
-							<h5>イベントスケジュール表</h5>
-						</div>
-					</div>
-					<div class="custom_col_4">
-						<div class="grade_enrollment_box orange_grade">
-							<p>クリック</p>
-							<h5>ZIPPY KIDS月刊便り</h5>
-						</div>
-					</div>
-					<div class="custom_col_4">
-						<div class="grade_enrollment_box cyan_grade">
-							<p>クリック</p>
-							<h5>長期休み期間中のみ<br class="cpc">ご利用の方</h5>
-						</div>
-					</div>
-					<div class="custom_col_4">
-						<div class="grade_enrollment_box blue_grade">
-							<p>クリック</p>
-							<h5>英検合格実績</h5>
-						</div>
-					</div>
-					<div class="custom_col_4">
-						<div class="grade_enrollment_box gray_grade">
-							<p>クリック</p>
-							<h5><span>ZIPPY KIDS </span>
-								<span class="color_yellow">B</span>
-								<span class="color_blue">L</span>
-								<span class="color_green">O</span>
-								<span class="color_pink">G</span>
-							</h5>
-						</div>
-					</div>
-					<div class="custom_col_4">
-						<div class="grade_enrollment_box green_grade">
-							<p>クリック</p>
-							<h5><img src="images/grade_enrollment_image.png" alt="image"></h5>
-						</div>
-					</div>
-				</div>
+	<!-- contact_form_section -->
+	<section class="contact_form_section" id="contact">
+		<div class="container">
+			<div class="heading_text text-center" data-aos="fade-up">
+				<p>Contact Me</p>
+				<h2>Get in Touch</h2>
+				<!-- <iframe width="1920" height="1176" src="https://xd.adobe.com/embed/653e94a8-fe12-4074-83fb-30ef110a6a6a-306d/" frameborder="0" allowfullscreen></iframe> -->
 			</div>
-		</div>
-	</section>
-	<footer class="site_footer">
-		<div class="custom_container">
-			<div class="custom_row">
-				<div class="custom_col_6">
-					<div class="footer_about">
-						<div class="custom_row">
-							<div class="custom_col_image">
-								<div class="footer_logo">
-									<img src="images/footer_logo.png">
-								</div>
-							</div>
-							<div class="custom_col_text">
-								<div class="footer_text">
-									<p>民間学童保育ZIPPY KIDS</p>
-									<div class="footer_text_links">
-										<a class="contact_number" href="tel:0338090456"><i class="fas fa-phone-alt"></i>03-3809-0456</a>
-										<a class="contact_form" href="#"><i class="far fa-envelope"></i>お問い合わせ</a>
+			<div class="contact_form_sec">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="contact_form" data-aos="zoom-out-right">
+							<form>
+								<div class="row">
+									<div class="col-md-6 form_col_padding">
+										<input type="text" placeholder="Name">
+									</div>
+									<div class="col-md-6 form_col_padding">
+										<input type="email" placeholder="Email">
+									</div>
+									<div class="col-md-6 form_col_padding">
+										<input type="text" placeholder="Phone Number">
+									</div>
+									<div class="col-md-6 form_col_padding">
+										<input type="text" placeholder="Subject">
+									</div>	
+									<div class="col-12">
+										<textarea placeholder="Messages" rows="8"></textarea>
 									</div>
 								</div>
+								<button class="yellow_btn">Send Message <svg xmlns="http://www.w3.org/2000/svg" width="24.674" height="21.446" viewBox="0 0 24.674 21.446">
+									<path id="Path_5048" data-name="Path 5048" class="cls-1" d="M24.659,34.368a.723.723,0,0,0-.964-.828L.466,42.407a.723.723,0,0,0,0,1.35l6.525,2.52v7.938a.723.723,0,0,0,1.368.325l2.7-5.355,6.586,4.888a.723.723,0,0,0,1.122-.37C24.914,33.542,24.648,34.419,24.659,34.368Zm-5.734,2.541L7.609,44.967,2.74,43.087ZM8.435,46.154,18.3,39.13c-8.487,8.954-8.044,8.482-8.081,8.532-.055.074.1-.214-1.782,3.512ZM17.681,52.3l-5.8-4.3L22.366,36.94Z" transform="translate(-0.001 -33.492)"/>
+								</svg></button>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="contact_form_details_box_sec" data-aos="zoom-out-left">
+							<div class="contact_form_details_box contact_phone_number">
+								
+								<div class="contact_form_details_box_image">
+									<div class="contact_form_details_box_image_inner">
+
+										<img src="images/call-outline-white.png">
+									</div>
+								</div>
+								<div class="contact_form_details_box_text">
+									<h6>Call me</h6>
+									<a href="#">+081 12586 86397</a>
+									<a href="#">+081 12586 86397</a>
+								</div>
+							</div>
+							<div class="contact_form_details_box contact_email">
+								
+								<div class="contact_form_details_box_image">
+									<div class="contact_form_details_box_image_inner">
+
+										<img src="images/mail-white.png">
+									</div>
+								</div>
+								<div class="contact_form_details_box_text">
+									<h6>E- mail</h6>
+									<a href="#">mariospeedwagon.123@gmail.com</a>
+								</div>
+							</div>
+							<div class="contact_form_details_box contact_location">
+								
+								<div class="contact_form_details_box_image">
+									<div class="contact_form_details_box_image_inner">
+
+										<img src="images/location-outline.png">
+									</div>
+								</div>
+								<div class="contact_form_details_box_text">
+									<h6>Location</h6>
+									<a href="#">474 Central Road</a>
+									<a href="#">New York</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="custom_col_6">
-					<div class="footer_links">
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="footer_section">
+		<div class="top_footer">
+			<div class="container">
+				<div class="top_footer_text text-center">
+					<img src="images/footer_logo.png" class="mx-auto footer_logo">
+					<p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+					been the industry's standard dummy text ever since the 1500s,</p>
+					<div class="footer_social_icon">
 						<ul>
-							<li class="link_yellow">
-								<a href="#">ホーム</a>
+							<li>
+								<a href="#">
+									<img src="images/facebook.png">
+								</a>
 							</li>
-							<li class="link_orange">
-								<a href="#">利用料金</a>
+							<li>
+								<a href="#">
+									<img src="images/instagram.png">
+								</a>
 							</li>
-							<li class="link_blue">
-								<a href="#">サービス内容</a>
-							</li>
-							<li class="link_pink">
-								<a href="#">施設案内</a>
-							</li>
-							<li class="link_green">
-								<a href="#">英検対策レッスン</a>
-							</li>
-							<li class="link_yellow">
-								<a href="#">オンラインスクール</a>
+							<li>
+								<a href="#">
+									<img src="images/linkedin.png">
+								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="footer_copyright">
-				<p>© 2021 zippy kids All Rights Reserved.</p>
+		</div>
+		<div class="bottom_footer">
+			<div class="text-center">
+				<p><span>Copyright © </span> 2021 Dhyey. All Right Reserved</p>
 			</div>
 		</div>
 	</footer>
-	<div class="pagetop" style=""><a href="javascript:void(0)"><i class="fas fa-chevron-up"></i></a></div>
-	<div id="animation_canvas"></div>
+	<!-- bottom to top btn -->
+	<a class="topbtn"></a>
+
 	<script src="js/jquery.min.js"></script>
-	<script src="js/pixi.min.js"></script>
-	<script>
-		var bgAnimation = function() {
-			var w = $(window).innerWidth();
-			var h = $(window).innerHeight();
-			var app = new PIXI.Application(w, h, { antialias: true, transparent: true, autoResize: true, resolution: 2});
-			$('#animation_canvas').append(app.view);
-			var color = [0x362983, 0x009547, 0xFFE900, 0x00A0DB, 0xA01F80, 0xE40274, 0xE31E2F, 0x9ABD36];
-			var xAdd = [];
-			var styledAlphabet = [];
-			var alphabets = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-			var scale = [];
-			for (var i = 0; i < 26; i++) {
-				var colorSelect = i % color.length
-				const style = new PIXI.TextStyle({
-					fontFamily: 'Arial',
-					fontSize: 18,
-					fontWeight: '900',
-					fill: [color[colorSelect]],
-				});
-				var x = Math.floor(Math.random() * w) + 10
-				var y = Math.floor(Math.random() * h)
-				styledAlphabet.push(new PIXI.Text(alphabets[i], style));
-				styledAlphabet[i].x = x;
-				styledAlphabet[i].y = y;
-				styledAlphabet[i].x = x;
-				styledAlphabet[i].y = y;
-				styledAlphabet[i].rotation = 0.1 + ((i % 4) * 0.1);
-				app.stage.addChild(styledAlphabet[i]);
-			}
-			console.log(styledAlphabet);
-			animate();
-			function animate() {
-				requestAnimationFrame(animate);
-				var skew = [0.02, 0.04, 0.06, 0.08, 0.1];
-				var xPlus = [0.05, 0.1, 0.15, 0.2, 0.25];
-				for (var i = 0; i < 26; i++) {
-					var y,x;
-					if(styledAlphabet[i].y > h) {
-						y = -10
-						x = Math.floor(Math.random() * w) + 10;
-					} else {
-						y = styledAlphabet[i].y + 0.2 + ((i % 4) * 0.1);
-					}
-					if (styledAlphabet[i].x > w - 10) {
-						xAdd[i] = -1;
-					} else if (styledAlphabet[i].x < 10) {
-						xAdd[i] = 1;
-					}
-					if(xAdd[i] === -1) {
-						x = styledAlphabet[i].x - xPlus[i % 4];
-					} else {
-						x = styledAlphabet[i].x + xPlus[i % 4];
-					}
-					styledAlphabet[i].position.x = x;
-					styledAlphabet[i].position.y = y;
-					// styledAlphabet[i].skew.y += i % 4 === 0 ? skew[i % 4] : skew[i % 4] * -1;
-					styledAlphabet[i].rotation += i % 4 === 0 ? (0.01 + ((i % 4) * 0.01)) : (0.01 + ((i % 4) * -0.01));
-				}
-			}
-		}
-		bgAnimation();
-		$(window).resize(function() {
-			var w = $(window).innerWidth();
-			var h = $(window).innerHeight();
-			$('canvas').width(w).height(h), { antialias: true, transparent: true, autoResize: true, resolution: 2}; 
-		});
-	</script>
-	<script src="js/fonts-awesome-5.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- slick slider -->
 	<script src="js/slick.js"></script>
+	<!-- font Awesome -->
+	<script src="js/FontAwesome.js"></script>
+	<!-- isotop -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<!-- aos -->
+	<script src="js/aos.js"></script>
+	<!-- waypoints -->
+	<script src="js/jquery.waypoints.js"></script>
+	<!-- Typed.js -->
+	<script src="js/typed.js@2.0.12"></script>
+	<!-- counterup -->
+	<script src="js/jquery.counterup.js"></script>
 	<script src="js/custom.js"></script>
+	<!-- <script type="text/javascript"></script> -->
 </body>
 </html>

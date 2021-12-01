@@ -5,13 +5,10 @@ $(window).on('load',function() {
 	// });
 	let loaderheight = $("#loader-wrapper").innerHeight();
 
-	$('#loader-wrapper').css({"top": -loaderheight,"bottom": loaderheight});
+	$('#loader-wrapper').css({"top": "-100%","bottom": "100%"});
 });
 
 $(document).ready(function() {
-	// aos
-	AOS.init();
-
 	// nav
 	$(window).on('scroll',function(){
 		var top = $(window).scrollTop();
@@ -27,6 +24,7 @@ $(document).ready(function() {
 	$('.navbar-toggler').on("click", function(){
 		$(this).toggleClass('menu_open');
 		$('.navbar-collapse').toggleClass('toggle_open');
+		$('body').toggleClass('style_overflow_hidden');
 	});
 	$('nav li .nav-link').on("click", function(){
 		$('.navbar-toggler').removeClass('menu_open');
@@ -122,6 +120,9 @@ $(document).ready(function() {
 			$('.contact_form_section').css("margin-bottom","0");
 		}
 	});
+
+	// aos
+	AOS.init();
 });
 
 // Typed.JS
@@ -129,5 +130,5 @@ var typed = new Typed('.banner_text_inner h5', {
 	strings: ["Product Manager.", "Project Manager."],
 	typeSpeed: 30,
 	loop: true,
-	loopCount: Infinity,
+	loopCount: Infinity
 });

@@ -100,7 +100,7 @@ header {
 	top: 31px;
 	left: 0;
 	right: 0;
-	z-index: 1;
+	z-index: 2;
 	transition: all 0.3s;
 }
 header.scrollnav {
@@ -126,6 +126,9 @@ nav li .nav-link {
 	font-weight: 600;
 	transition: all 0.3s;
 	overflow: hidden;
+}
+header.scrollnav nav li .nav-link {
+    font-size: 16px;
 }
 nav li:last-child .nav-link {
 	margin-right: 0 !important;
@@ -215,6 +218,12 @@ nav li .nav-link:hover:after{
 	bottom: 0;
 	transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) 0.12s;
 	transform: rotate(-90deg);
+}
+header a.navbar-brand img {
+    transition: all 0.3s;
+}
+header.scrollnav a.navbar-brand img {
+    max-width: 62px;
 }
 /*banner_section*/
 .banner_section {
@@ -1456,6 +1465,10 @@ button.yellow_btn:hover svg{
 	.contact_form textarea, .contact_form input {
 		padding: 10px 20px;
 		margin-bottom: 30px;
+		border-radius: 8px;
+	}
+	.contact_form input {
+		height: 55px;
 	}
 }
 @media only screen and (max-width: 767px){

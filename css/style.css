@@ -253,10 +253,12 @@ nav li .nav-link:hover:after{
 	transform: rotate(-90deg);
 }
 header a.navbar-brand img {
+	transform: scale(1);
 	transition: all 0.3s;
 }
 header.scrollnav a.navbar-brand img {
-	max-width: 62px;
+	/*max-width: 62px;*/
+	transform: scale(0.83);
 }
 /*banner_section*/
 .banner_section {

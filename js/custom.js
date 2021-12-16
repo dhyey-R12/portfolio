@@ -4,11 +4,13 @@ $(window).on('load',function() {
 		$('body').removeClass('style_overflow_hidden');
 	// });
 	let loaderheight = $("#loader-wrapper").innerHeight();
-
 	$('#loader-wrapper').css({"top": "-100%","bottom": "100%"});
+	// $('.custom_scroll').mCustomScrollbar();
 });
 
+
 $(document).ready(function() {
+// $(window).resize(function(){});
 	// nav
 	$(window).on('scroll',function(){
 		var top = $(window).scrollTop();
@@ -123,6 +125,17 @@ $(document).ready(function() {
 
 	// aos
 	AOS.init();
+
+	// parallaxie JS
+	$('.project_section_inner').parallaxie();
+
+	// Window Relode JS
+	$(window).on("resize", function(){
+		var screen = $(window).width();
+		if(screen >= 767){
+			location.reload();
+		}
+	});
 });
 
 // Typed.JS

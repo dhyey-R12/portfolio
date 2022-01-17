@@ -148,6 +148,8 @@ header.scrollnav {
 nav {
 	background-color: #fff;
 	box-shadow: 0 3px 6px 0 rgb(0 0 0 / 8%);
+	padding-left: 25px !important;
+    padding-right: 25px !important;
 }
 header.scrollnav nav { box-shadow: none; }
 nav li .nav-link {
@@ -253,8 +255,8 @@ nav li .nav-link:hover:after{
 	transform: rotate(-90deg);
 }
 header a.navbar-brand img {
-	transform: scale(1);
 	transition: all 0.3s;
+    max-width: 78px;
 }
 header.scrollnav a.navbar-brand img {
 	/*max-width: 62px;*/
@@ -1092,7 +1094,7 @@ button.yellow_btn:hover svg{
 		margin-bottom: 20px;
 	}
 	.services_box {
-		padding: 70px 30px 30px;
+		padding: 70px 20px 20px;
 	}
 	.services_box h6 {
 		margin-bottom: 10px;
@@ -1343,6 +1345,10 @@ button.yellow_btn:hover svg{
 	}
 	header a.navbar-brand img {
 		max-width: 64px;
+	}
+	nav {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
 	}
 	nav li .nav-link {
 		padding: 8px !important;

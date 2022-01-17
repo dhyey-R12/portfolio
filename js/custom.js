@@ -130,12 +130,12 @@ $(document).ready(function() {
 	$('.project_section_inner').parallaxie();
 
 	// Window Relode JS
-	$(window).on("resize", function(){
-		var screen = $(window).width();
-		if(screen >= 767){
-			location.reload();
-		}
-	});
+	// $(window).on("resize", function(){
+	// 	var screen = $(window).width();
+	// 	if(screen >= 767){
+	// 		location.reload();
+	// 	}
+	// });
 });
 
 // Typed.JS

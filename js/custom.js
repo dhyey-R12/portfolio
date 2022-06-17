@@ -127,7 +127,7 @@ $(document).ready(function() {
 	AOS.init();
 
 	// parallaxie JS
-	$('.project_section_inner').parallaxie();
+	// $('.project_section_inner').parallaxie();
 
 	// Window Relode JS
 	// $(window).on("resize", function(){
@@ -139,9 +139,9 @@ $(document).ready(function() {
 });
 
 // Typed.JS
-var typed = new Typed('.banner_text_inner h5', {
-	strings: ["Product Manager.", "Project Manager."],
-	typeSpeed: 30,
-	loop: true,
-	loopCount: Infinity
-});
+// var typed = new Typed('.banner_text_inner h5', {
+// 	strings: ["Product Manager.", "Project Manager."],
+// 	typeSpeed: 30,
+// 	loop: true,
+// 	loopCount: Infinity
+// });

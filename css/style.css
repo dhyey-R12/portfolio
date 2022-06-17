@@ -269,6 +269,10 @@ header.scrollnav a.navbar-brand img {
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*position: relative;*/
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 .banner_section .container {
 	overflow: hidden;
@@ -381,7 +385,7 @@ header.scrollnav a.navbar-brand img {
 	font-weight: bold;
 }
 .about_my_intro_sec {
-	padding: 208px 0 113px;
+	padding: 100px 0;
 	overflow: hidden;
 }
 .about_my_intro_image {
@@ -655,6 +659,7 @@ header.scrollnav a.navbar-brand img {
 	height: 81px;
 	text-align: center;
 	line-height: 81px;
+	background-color: transparent !important;
 }
 .skills_box.skills_box_first .skills_box_inner:nth-child(1) .skills_box_image_inner{
 	background-color: #11bb1a;
@@ -690,8 +695,8 @@ header.scrollnav a.navbar-brand img {
 	background-color: #051E3B;
 }*/
 .skills_box_image_inner img {
-	max-width: 50px;
-	max-height: 50px;
+	max-width: 65px;
+	max-height: 65px;
 }
 .skills_box_progress_bar {
 	-ms-flex: 0 0 calc( 100% - 104px);
@@ -1210,7 +1215,7 @@ button.yellow_btn:hover svg{
 		top: -30px;
 	}
 	.about_my_intro_sec {
-		padding: 170px 0 90px;
+		padding: 90px 0;
 	}
 	.heading_text p {
 		font-size: 20px !important;
@@ -1270,8 +1275,8 @@ button.yellow_btn:hover svg{
 		line-height: 75px;
 	}
 	.skills_box_image_inner img {
-		max-width: 45px;
-		max-height: 45px;
+		max-width: 60px;
+		max-height: 60px;
 	}
 	.skills_box_progress_bar {
 		-ms-flex: 0 0 calc( 100% - 95px);
@@ -1418,7 +1423,7 @@ button.yellow_btn:hover svg{
 		padding: 25px 0;
 	}
 	.about_my_intro_sec {
-		padding: 210px 0 50px;
+		padding: 50px 0;
 	}
 	.about_my_intro_image {
 		padding-top: 87%;
@@ -1531,9 +1536,6 @@ button.yellow_btn:hover svg{
 	}
 	.about_info_sec {
 		top: -20px;
-	}
-	.about_my_intro_sec {
-		padding: 310px 0 50px;
 	}
 	.about_my_intro_image:before {
 		left: -10px;
@@ -1668,8 +1670,8 @@ button.yellow_btn:hover svg{
 		line-height: 65px;
 	}
 	.skills_box_image_inner img {
-		max-width: 35px;
-		max-height: 35px;
+		max-width: 50px;
+		max-height: 50px;
 	}
 	.skills_box_progress_bar {
 		-ms-flex: 0 0 calc( 100% - 85px);
@@ -1688,9 +1690,6 @@ button.yellow_btn:hover svg{
 		margin-top: 40px;
 		padding-top: 100%;
 	}
-	.about_my_intro_sec {
-		padding: 310px 0 30px;
-	}
 	.about_my_intro_image {
 		padding-top: 133%;
 		max-width: 450px;
@@ -1706,8 +1705,8 @@ button.yellow_btn:hover svg{
 		line-height: 55px;
 	}
 	.skills_box_image_inner img {
-		max-width: 28px;
-		max-height: 28px;
+		max-width: 40px;
+		max-height: 40px;
 	}
 	.skills_box_progress_bar {
 		-ms-flex: 0 0 calc( 100% - 70px);
